@@ -10,7 +10,7 @@ package 'golang'
 package 'git'
 
 git '/var/www/app' do
-  repository 'https://gist.github.com/54fca1174770197d9226.git'
+  repository 'https://gist.github.com/f67f50ee73bffa14d869.git'
   action :export
 end
 
