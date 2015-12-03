@@ -13,7 +13,6 @@
 
 Vagrant is used to start and provision three nodes using chef-zero. These nodes are given static private IPs from the 172.0.0.0/16 range. If these need to be changed, simply edit the `Vagrantfile` to update them, and also change the `spec/integration/cluster_spec.rb` file.
 
-
 ### Running the stack
 
     vagrant up
@@ -43,3 +42,11 @@ Run the integration tests straight after firing up a new stack.
 There is a basic `.kitchen.yml` file which describes the platform on Ubuntu and defines two suites for the web and app.
 
 	kitchen test
+
+#### Updating the sample application
+
+The sample application is being served from a Github gist, found here: <https://gist.github.com/vishvish/54fca1174770197d9226> Changes to this script can be propagated by simply reprovisioning the app servers (or the entire stack).
+
+    vagrant provision app1
+    vagrant provision app2
+
