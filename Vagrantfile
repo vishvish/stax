@@ -6,7 +6,7 @@ class Infrastructure
     [
       { hostname: 'app1', box: 'ubuntu/trusty64', role: 'app', memory: 768, ip: '172.25.1.10' },
       { hostname: 'app2', box: 'ubuntu/trusty64', role: 'app', memory: 768, ip: '172.25.1.11' },
-      { hostname: 'web1', box: 'ubuntu/trusty64', role: 'load_balancer', memory: 768, ip: '172.25.1.100', message: 'Open http://localhost:8080 in your browser now.' }
+      { hostname: 'web1', box: 'ubuntu/trusty64', role: 'load_balancer', memory: 768, ip: '172.25.1.100', message: 'Open http://localhost:2112 in your browser now.' }
     ]
   end
 end
@@ -33,7 +33,7 @@ Vagrant.configure(2) do |config|
 
       # expose the front-end
       if node[:hostname] == "web1"
-        config.vm.network "forwarded_port", guest: 80, host: 8080
+        config.vm.network "forwarded_port", guest: 80, host: 2112
       end
 
       if node[:message]

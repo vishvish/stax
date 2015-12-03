@@ -18,7 +18,7 @@ Vagrant is used to start and provision three nodes using chef-zero. These nodes 
 
     vagrant up
 
-Open <http://localhost:8080> in your browser. NOTE: Strange things are happening with Google Chrome, and the page seems to be cached in the browser. Firefox and Safari do not exhibit this behaviour, and the pages are displayed in the expected round-robin manner.
+Open <http://localhost:2112> in your browser. NOTE: Strange things are happening with Google Chrome, and the page seems to be cached in the browser. Firefox and Safari do not exhibit this behaviour, and the pages are displayed in the expected round-robin manner.
 
 ### Testing
 
