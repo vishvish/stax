@@ -45,7 +45,7 @@ There is a basic `.kitchen.yml` file which describes the platform on Ubuntu and 
 
 #### Updating the sample application
 
-The sample application is being served from a Github gist, found here: <https://gist.github.com/vishvish/54fca1174770197d9226> Changes to this script can be propagated by simply reprovisioning the app servers (or the entire stack).
+The sample application is being served from a Github gist, found here: <https://gist.github.com/f67f50ee73bffa14d869.git> Changes to this script can be propagated by simply reprovisioning the app servers (or the entire stack).
 
     vagrant provision app1
     vagrant provision app2
