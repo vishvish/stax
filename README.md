@@ -22,6 +22,9 @@ Open <http://localhost:2112> in your browser. NOTE: Strange things are happening
 
 ### Testing
 
+The Rspec tests cover the two cookbooks for the servers, and an integration test that checks the server response, as
+well as the round-robin response correctness.
+
 Install the dependencies.
 
 	bundle install
