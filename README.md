@@ -11,7 +11,7 @@
 
 ### The build
 
-Vagrant is used to start and provision three nodes using chef-zero. These nodes are given static private IPs from the 172.0.0.0/16 range. If these need to be changed, simply edit the `Vagrantfile` to update them, and also change the `spec/integration/cluster_spec.rb` file.
+Vagrant is used to start and provision three nodes using chef-zero. These nodes are given static private IPs from the 172.0.0.0/16 range. If these need to be changed, simply edit the `Vagrantfile` to update them, and also change the `spec/integration/cluster_spec.rb` file. Unfortunately Vagrant starts a separate instance of chef-zero for each node, so shared information through Ohai, such as IP address, cannot be searched for.
 
 ### Running the stack
 
